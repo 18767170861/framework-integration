@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.wmc</groupId>
+  <artifactId>framework-integration</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0.0</version>
+
+  <modules>
+    <module>mall</module>
+    <module>kill</module>
+    <module>dtx</module>
+    <module>shiro</module>
+    <module>security</module>
+    <module>mq</module>
+    <module>elasticsearch</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+    <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+    <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+
+    <!-- 统一依赖管理 -->
+    <!--    <spring-boot.version>2.3.12.RELEASE</spring-boot.version>-->
+    <!--    <spring-cloud.version>Hoxton.SR12</spring-cloud.version>-->
+    <!--    <spring-cloud-alibaba-dependencies>2.2.7.RELEASE</spring-cloud-alibaba-dependencies>-->
+
+    <spring-boot.version>2.3.8.RELEASE</spring-boot.version>
+    <spring-cloud.version>Hoxton.SR10</spring-cloud.version>
+    <spring-cloud-alibaba-dependencies>2.2.5.RELEASE</spring-cloud-alibaba-dependencies>
+    <lombok.version>1.18.16</lombok.version>
+    <commons-lang3.version>3.12.0</commons-lang3.version>
+    <commons-collections4.version>4.4</commons-collections4.version>
+    <commons-beanutils.version>1.9.4</commons-beanutils.version>
+    <spring-session-data-redis.version>2.3.3.RELEASE</spring-session-data-redis.version>
+    <spring-social.version>1.1.6.RELEASE</spring-social.version>
+    <mybatis-spring-boot-starter.version>2.2.2</mybatis-spring-boot-starter.version>
+    <druid-spring-boot-starter.version>1.2.8</druid-spring-boot-starter.version>
+    <hmily-springcloud.version>2.1.1</hmily-springcloud.version>
+    <rocketmq-spring-boot-starter.version>2.2.1</rocketmq-spring-boot-starter.version>
+    <jackson-databind.version>2.13.1</jackson-databind.version>
+    <log4j.version>2.17.2</log4j.version>
+    <elasticsearch.version>7.8.0</elasticsearch.version>
+
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- 用于管理spring相关依赖的的版本 保持版本的一致兼容
+      (spring已停止使用该方式，而是用spring-boot-starter-parent来控制) -->
+      <!--            <dependency>-->
+      <!--                <groupId>io.spring.platform</groupId>-->
+      <!--                <artifactId>platform-bom</artifactId>-->
+      <!--                <version>Cairo-SR7</version>-->
+      <!--                <type>pom</type>-->
+      <!--                <scope>import</scope>-->
+      <!--            </dependency>-->
+      <!-- 用于管理spring-cloud各个组件的版本 保证spring-cloud各个组件的版本和springboot的一致兼容 -->
+      <!--spring boot-->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!--spring cloud-->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!--spring cloud 阿里巴巴-->
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>${spring-cloud-alibaba-dependencies}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>${commons-collections4.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>${commons-beanutils.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.session</groupId>
+        <artifactId>spring-session-data-redis</artifactId>
+        <version>${spring-session-data-redis.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.social</groupId>
+        <artifactId>spring-social-config</artifactId>
+        <version>${spring-social.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.social</groupId>
+        <artifactId>spring-social-core</artifactId>
+        <version>${spring-social.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.social</groupId>
+        <artifactId>spring-social-security</artifactId>
+        <version>${spring-social.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.social</groupId>
+        <artifactId>spring-social-web</artifactId>
+        <version>${spring-social.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>${mybatis-spring-boot-starter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid-spring-boot-starter</artifactId>
+        <version>${druid-spring-boot-starter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.dromara</groupId>
+        <artifactId>hmily-springcloud</artifactId>
+        <version>${hmily-springcloud.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.dromara</groupId>
+        <artifactId>hmily-spring-boot-starter-springcloud</artifactId>
+        <version>${hmily-springcloud.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.rocketmq</groupId>
+        <artifactId>rocketmq-spring-boot-starter</artifactId>
+        <version>${rocketmq-spring-boot-starter.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch</groupId>
+        <artifactId>elasticsearch</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.elasticsearch.client</groupId>
+        <artifactId>elasticsearch-rest-client</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+      <!-- elasticsearch的客户端 -->
+      <dependency>
+        <groupId>org.elasticsearch.client</groupId>
+        <artifactId>elasticsearch-rest-high-level-client</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+      <!-- elasticsearch依赖2.x的log4j -->
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>${log4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>${log4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson-databind.version}</version>
+      </dependency>
+    </dependencies>
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!-- maven-surefire-plugin 插件，用于运行单元测试。 -->
+        <!-- 注意，需要使用 3.0.X+，因为要支持 Junit 5 版本 -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+          <configuration>
+            <skip>true</skip>
+          </configuration>
+        </plugin>
+        <!-- maven编译的版本 -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring-boot.version}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>${maven-resources-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+  </build>
+
+  <!-- 使用 aliyun 的 Maven 源，提升下载速度 -->
+  <repositories>
+    <repository>
+      <id>aliyun</id>
+      <name>aliyun</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+    </repository>
+  </repositories>
+
+</project>
