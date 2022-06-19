@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/security-core/pom.xml" />
         <option value="$PROJECT_DIR$/security/pom.xml" />
         <option value="$PROJECT_DIR$/shiro-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro/pom.xml" />
       </set>
     </option>
   </component>

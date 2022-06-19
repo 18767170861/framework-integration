@@ -35,7 +35,6 @@
       <module fileurl="file://$PROJECT_DIR$/security/security-core/security-core.iml" filepath="$PROJECT_DIR$/security/security-core/security-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security-demo/security-demo.iml" filepath="$PROJECT_DIR$/security/security-demo/security-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/kill/server/server.iml" filepath="$PROJECT_DIR$/kill/server/server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shiro/shiro.iml" filepath="$PROJECT_DIR$/shiro/shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro/shiro-demo/shiro-demo.iml" filepath="$PROJECT_DIR$/shiro/shiro-demo/shiro-demo.iml" />
     </modules>
   </component>
