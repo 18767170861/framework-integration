@@ -1,0 +1,8 @@
+
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(™Øÿþûÿÿÿÿ
+^
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¸„ÎÀ
+c
+java:S44882"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(˜µ£Êûÿÿÿÿ
+p
+java:S1192)"UDefine a constant instead of duplicating this literal "redirect:/base/error" 3 times.(°±ˆ˜ûÿÿÿÿ

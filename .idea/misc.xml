@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/kill/server" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mall/pom.xml" />
+        <option value="$PROJECT_DIR$/pay/pom.xml" />
+        <option value="$PROJECT_DIR$/kill/server/pom.xml" />
+        <option value="$PROJECT_DIR$/kill/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo-bank1/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/dtx-tcc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/elasticsearch/es-springdata/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/api/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx-notifymsg-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/dtx/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/security-app/pom.xml" />
+        <option value="$PROJECT_DIR$/security-core/pom.xml" />
+        <option value="$PROJECT_DIR$/security/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-demo/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

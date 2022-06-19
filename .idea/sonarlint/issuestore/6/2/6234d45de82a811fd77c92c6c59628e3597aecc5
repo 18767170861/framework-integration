@@ -1,0 +1,13 @@
+
+e
+java:S44881"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ãèïûÿÿÿÿ
+Z
+java:S2147="DCombine this catch with the one at line 58, which has the same body.(Ïü¨¤
+_
+java:S2147@"DCombine this catch with the one at line 58, which has the same body.(û¹€ªøÿÿÿÿ
+=
+java:S1068"'Remove this unused "log" private field.(ÂèûŒ
+_
+java:S1192<"IDefine a constant instead of duplicating this literal "userName" 3 times.(­‘î²
+\
+java:S1192'"FDefine a constant instead of duplicating this literal "login" 3 times.(Íı‡Ç

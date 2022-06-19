@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kill/api/api.iml" filepath="$PROJECT_DIR$/kill/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/discover-server/discover-server.iml" filepath="$PROJECT_DIR$/dtx/discover-server/discover-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx.iml" filepath="$PROJECT_DIR$/dtx/dtx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-notifymsg-demo/dtx-notifymsg-demo.iml" filepath="$PROJECT_DIR$/dtx/dtx-notifymsg-demo/dtx-notifymsg-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-notifymsg-demo/dtx-notifymsg-demo-bank1/dtx-notifymsg-demo-bank1.iml" filepath="$PROJECT_DIR$/dtx/dtx-notifymsg-demo/dtx-notifymsg-demo-bank1/dtx-notifymsg-demo-bank1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-notifymsg-demo/dtx-notifymsg-demo-pay/dtx-notifymsg-demo-pay.iml" filepath="$PROJECT_DIR$/dtx/dtx-notifymsg-demo/dtx-notifymsg-demo-pay/dtx-notifymsg-demo-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo.iml" filepath="$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo-bank1/dtx-seata-demo-bank1.iml" filepath="$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo-bank1/dtx-seata-demo-bank1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo-bank2/dtx-seata-demo-bank2.iml" filepath="$PROJECT_DIR$/dtx/dtx-seata-demo/dtx-seata-demo-bank2/dtx-seata-demo-bank2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-demo.iml" filepath="$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-demo-bank1/dtx-tcc-demo-bank1.iml" filepath="$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-demo-bank1/dtx-tcc-demo-bank1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-demo-bank2/dtx-tcc-demo-bank2.iml" filepath="$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-demo-bank2/dtx-tcc-demo-bank2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-hmily-new-demo/dtx-tcc-hmily-new-demo.iml" filepath="$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-hmily-new-demo/dtx-tcc-hmily-new-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-txmsg-demo/dtx-txmsg-demo.iml" filepath="$PROJECT_DIR$/dtx/dtx-txmsg-demo/dtx-txmsg-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-txmsg-demo/dtx-txmsg-demo-bank1/dtx-txmsg-demo-bank1.iml" filepath="$PROJECT_DIR$/dtx/dtx-txmsg-demo/dtx-txmsg-demo-bank1/dtx-txmsg-demo-bank1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-txmsg-demo/dtx-txmsg-demo-bank2/dtx-txmsg-demo-bank2.iml" filepath="$PROJECT_DIR$/dtx/dtx-txmsg-demo/dtx-txmsg-demo-bank2/dtx-txmsg-demo-bank2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch/elasticsearch.iml" filepath="$PROJECT_DIR$/elasticsearch/elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch/es-springdata/es-springdata.iml" filepath="$PROJECT_DIR$/elasticsearch/es-springdata/es-springdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch/es-test/es-test.iml" filepath="$PROJECT_DIR$/elasticsearch/es-test/es-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-integration.iml" filepath="$PROJECT_DIR$/framework-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-hmily-new-demo/hmily-springcloud-account1/hmily-springcloud-account1.iml" filepath="$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-hmily-new-demo/hmily-springcloud-account1/hmily-springcloud-account1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-hmily-new-demo/hmily-springcloud-account2/hmily-springcloud-account2.iml" filepath="$PROJECT_DIR$/dtx/dtx-tcc-demo/dtx-tcc-hmily-new-demo/hmily-springcloud-account2/hmily-springcloud-account2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kill/kill.iml" filepath="$PROJECT_DIR$/kill/kill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall/mall.iml" filepath="$PROJECT_DIR$/mall/mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kill/model/model.iml" filepath="$PROJECT_DIR$/kill/model/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mq/mq.iml" filepath="$PROJECT_DIR$/mq/mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mq/native-api-demo/native-api-demo.iml" filepath="$PROJECT_DIR$/mq/native-api-demo/native-api-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/pay.iml" filepath="$PROJECT_DIR$/pay/pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security-app/security-app.iml" filepath="$PROJECT_DIR$/security/security-app/security-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security-browser/security-browser.iml" filepath="$PROJECT_DIR$/security/security-browser/security-browser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security-core/security-core.iml" filepath="$PROJECT_DIR$/security/security-core/security-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security-demo/security-demo.iml" filepath="$PROJECT_DIR$/security/security-demo/security-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kill/server/server.iml" filepath="$PROJECT_DIR$/kill/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro/shiro.iml" filepath="$PROJECT_DIR$/shiro/shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro/shiro-demo/shiro-demo.iml" filepath="$PROJECT_DIR$/shiro/shiro-demo/shiro-demo.iml" />
+    </modules>
+  </component>
+</project>
